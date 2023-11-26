@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Garamond, serif;
+  font-weight: 375;
+  font-variation-settings: "wght" 375;
+  font-size: 50px;
+}
+/* Common styles for all fading divs */
+#welcomeText,
+#introText,
+#readyText,
+#selectText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+/* Common styles for all fading elements */
+#optionButtons, #buttonList li, #welcomeText, #introText, #readyText, #selectText {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Style the buttons */
+li button {
+  display: inline-block;
+  padding: 20px 50px;
+  margin: 5px;
+  background-color: bisque;
+  color: #0c0c0c;
+  font-size: 30px;
+  font-family: Garamond, serif;
+  font-weight: 375;
+  font-variation-settings: "wght" 375;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: bisque;
+}
+
